@@ -5,9 +5,6 @@ gem 'rails', '3.2.19'
 
 ruby '2.1.3'
 
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
 #gem 'sqlite3'
 gem 'mysql2'
 gem 'foreman'
@@ -15,28 +12,6 @@ gem 'foreman'
 group :development, :mysql do
   gem 'brakeman'
   gem 'bundler-audit'
-  gem 'guard-brakeman'
-  gem 'guard-livereload'
-  gem 'guard-rspec'
-  gem 'guard-shell'
-  gem 'pry'
-  gem 'rack-livereload'
-  gem 'rb-fsevent'
-  gem 'travis-lint'
-  gem 'better_errors'
-  gem 'binding_of_caller'
-end
-
-gem 'gauntlt'
-
-gem 'simplecov', :require => false, :group => :test
-
-group :development, :test, :mysql do
-  gem 'launchy'
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'poltergeist'
-  gem 'rspec-rails', '2.14.2'
 end
 
 # Gems used only for assets and not required
@@ -53,31 +28,16 @@ end
 
 gem 'jquery-rails'
 
-# To use ActiveModel has_secure_password
- gem 'bcrypt'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
-# Use unicorn as the app server
- gem 'unicorn'
+gem 'unicorn'
 
-# Pow related gem
-gem 'powder'
 
 gem 'aruba'
 #gem 'minitest', '~> 4.0', :require=> "minitest/autorun"
 
-#gem 'minitest'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'debugger'
-
 gem 'execjs'
 gem 'therubyracer'
 
-# Add SMTP server support using MailCatcher
-gem 'mailcatcher'

@@ -42,12 +42,4 @@ Railsgoat::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = { :address => "localhost", :port => 1025 }
 
-  config.middleware.insert_before(
-       Rack::Lock, Rack::LiveReload,
-       :min_delay => 500,
-       :max_delay => 1000,
-       :port => 35727,
-       :host => 'railsgoat.dev',
-       :ignore => [ %r{dont/modify\.html$} ]
-  ) 
 end
