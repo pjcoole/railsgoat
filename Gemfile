@@ -1,9 +1,6 @@
 source 'https://rubygems.org'
 
-#don't upgrade
 gem 'rails'
-
-ruby '2.1.3'
 
 #gem 'sqlite3'
 gem 'mysql2'
