@@ -165,7 +165,7 @@ DEPENDENCIES
   jquery-fileupload-rails
   jquery-rails
   mysql2
-  rails (= 3.2.12)
+  rails
   sass-rails
   therubyracer
   uglifier
